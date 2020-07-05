@@ -36,7 +36,7 @@ const Navbar = (props: Props) => {
       <div className="block lg:hidden">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 border rounded dark:text-gray-100 dark:border-gray-100 border-gray-800  dark:hover:text-gray-100 hover:border-white"
+          className="flex items-center px-3 py-2 border rounded  dark:border-gray-100 border-gray-800  dark:hover:text-gray-100 hover:border-white"
         >
           <svg
             className="fill-current h-3 w-3"
@@ -58,25 +58,25 @@ const Navbar = (props: Props) => {
           <div className="text-sm">
             <Link
               to="/"
-              className="block  lg:inline-block lg:mt-0 dark:text-gray-100 hover:text-red-400 mr-4"
+              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4"
             >
               Home
             </Link>
             <Link
               to="/meme"
-              className="block  lg:inline-block lg:mt-0 dark:text-gray-100 hover:text-red-400 mr-4"
+              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4"
             >
               Meme
             </Link>
             <Link
               to="/event"
-              className="block  lg:inline-block lg:mt-0 dark:text-gray-100 hover:text-red-400 mr-4"
+              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4"
             >
               Event
             </Link>
             <Link
               to="/community"
-              className="block  lg:inline-block lg:mt-0 dark:text-gray-100 hover:text-red-400 mr-4"
+              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4"
             >
               Community
             </Link>
