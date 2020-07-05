@@ -10,7 +10,7 @@ const Photo = (props: Props) => {
     <div>
       <img
         className="rounded-lg"
-        src={`https://raw.githubusercontent.com/thanawatgulati/jennie/master/src/Photos/${props.image}.jpg`}
+        src={`../../Photos/${props.image}.jpg`}
         alt={props.alt}
       />
     </div>
