@@ -4,12 +4,12 @@ import SEO from "../components/seo"
 
 interface Props {}
 
-const Index = (props: Props) => {
+const Meme = (props: Props) => {
   return (
-    <Layout tag="Home">
-      <SEO title="Home" />
+    <Layout tag="Meme">
+      <SEO title="Meme" />
     </Layout>
   )
 }
 
-export default Index
+export default Meme

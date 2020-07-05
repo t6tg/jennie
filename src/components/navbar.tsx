@@ -62,6 +62,24 @@ const Navbar = (props: Props) => {
             >
               Home
             </Link>
+            <Link
+              to="/meme"
+              className="block  lg:inline-block lg:mt-0 dark:text-gray-100 hover:text-red-400 mr-4"
+            >
+              Meme
+            </Link>
+            <Link
+              to="/event"
+              className="block  lg:inline-block lg:mt-0 dark:text-gray-100 hover:text-red-400 mr-4"
+            >
+              Event
+            </Link>
+            <Link
+              to="/community"
+              className="block  lg:inline-block lg:mt-0 dark:text-gray-100 hover:text-red-400 mr-4"
+            >
+              Community
+            </Link>
           </div>
         </div>
       </div>
