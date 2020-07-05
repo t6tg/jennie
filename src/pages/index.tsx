@@ -6,7 +6,7 @@ interface Props {}
 
 const Index = (props: Props) => {
   return (
-    <Layout>
+    <Layout tag="Home">
       <SEO title="Home" />
       Jennie
     </Layout>
