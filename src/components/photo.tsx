@@ -1,4 +1,5 @@
 import React from "react"
+import Img from "gatsby-image"
 
 interface Props {
   alt: string
@@ -6,15 +7,7 @@ interface Props {
 }
 
 const Photo = (props: Props) => {
-  return (
-    <div>
-      <img
-        className="rounded-lg"
-        src={`../../Photos/${props.image}.jpg`}
-        alt={props.alt}
-      />
-    </div>
-  )
+  return <Img className="rounded-lg" fluid={props.image} alt={props.alt} />
 }
 
 export default Photo
