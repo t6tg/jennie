@@ -1,9 +1,20 @@
 import React from "react"
 
-interface Props {}
+interface Props {
+  alt: string
+  image: string
+}
 
 const Photo = (props: Props) => {
-  return <div></div>
+  return (
+    <div>
+      <img
+        className="rounded-lg"
+        src={`../Photos/${props.image}.jpg`}
+        alt={props.alt}
+      />
+    </div>
+  )
 }
 
 export default Photo
