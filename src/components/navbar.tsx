@@ -28,7 +28,7 @@ const Navbar = (props: Props) => {
         </svg>
 
         <span className="font-semibold text-xl tracking-tight">
-          <span className="text-sm bg-red-500 p-1 rounded-full px-2 text-white">
+          <span className="text-sm bg-red-400 p-1 rounded-full px-2 text-white">
             {props.tag}
           </span>
         </span>
