@@ -1,10 +1,18 @@
 module.exports = {
+  siteMetadata: {
+    title: "Jennie",
+    titleTemplate: "%s · Jennie",
+    description:
+      "Jennie is probably one of the sexiest and most petite idols right now and this site is photo stock of jennie.",
+    url: "https://jenniekim.now.sh/",
+    image: "static/snape.jpg",
+  },
   plugins: [
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Kim Jennie`,
+        name: `Jennie`,
         short_name: `Jennie`,
         start_url: `/`,
         background_color: `#1A202C`,
@@ -26,5 +34,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-dark-mode`,
   ],
 }

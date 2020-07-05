@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gray-100;
+  @apply text-gray-900;
+}
+
+body.dark {
+  @apply bg-gray-900;
+  @apply text-white;
+}
