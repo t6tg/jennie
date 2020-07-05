@@ -36,16 +36,9 @@ const Navbar = (props: Props) => {
       <div className="block lg:hidden">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 border rounded  dark:border-gray-100 border-gray-800  dark:hover:text-gray-100 hover:border-white"
+          className="flex items-center px-3 py-2 border-none hover:border-none outline-none focus:outline-none text-xl"
         >
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+          🍔
         </button>
       </div>
       <div
@@ -60,25 +53,25 @@ const Navbar = (props: Props) => {
               to="/"
               className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4"
             >
-              Home
+              🏠 &nbsp; Home
             </Link>
             <Link
               to="/meme"
-              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4"
+              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4 mt-4"
             >
-              Meme
+              😜 &nbsp; Meme
             </Link>
             <Link
               to="/event"
-              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4"
+              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4 mt-4"
             >
-              Event
+              📅 &nbsp; Event
             </Link>
             <Link
               to="/community"
-              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4"
+              className="block  lg:inline-block lg:mt-0  hover:text-red-400 mr-4 mt-4"
             >
-              Community
+              👨‍👨‍👦‍👦 &nbsp; Community
             </Link>
           </div>
         </div>
