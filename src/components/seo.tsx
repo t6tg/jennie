@@ -25,7 +25,7 @@ const SEO = ({ title, description, image, article }) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <html lang="en" data-react-helmet="lang,data-react-helmet" />
+      <html lang="en">
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 
@@ -50,6 +50,7 @@ const SEO = ({ title, description, image, article }) => {
       )}
 
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      <html/
     </Helmet>
   )
 }
