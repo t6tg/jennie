@@ -25,7 +25,7 @@ const SEO = ({ title, description, image, article }) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <html lang="en" />
+      <html lang="en" data-react-helmet="lang" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 
