@@ -12,7 +12,7 @@ const PhotoList = (props: Props) => {
         edges {
           node {
             childImageSharp {
-              fluid {
+              fluid(maxWidth: 200) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -22,7 +22,7 @@ const PhotoList = (props: Props) => {
     }
   `)
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 xl:grid-cols-4 gap-4">
       {data.allFile.edges.map((r, i) => (
         <Photo key={i} image={r.node.childImageSharp.fluid} alt={i} />
       ))}
