@@ -12,7 +12,7 @@ const PhotoList = (props: Props) => {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 200) {
+              fluid {
                 ...GatsbyImageSharpFluid
               }
             }
