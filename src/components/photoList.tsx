@@ -22,9 +22,13 @@ const PhotoList = (props: Props) => {
     }
   `)
   return (
-    <div className="grid grid-cols-2 xl:grid-cols-4 gap-4">
+    <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       {data.allFile.edges.map((r, i) => (
-        <Photo key={i} image={r.node.childImageSharp.fluid} alt={i} />
+        <Photo
+          key={i}
+          image={r.node.childImageSharp.fluid}
+          alt={`Jennie_${i}`}
+        />
       ))}
     </div>
   )
