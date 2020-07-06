@@ -1,5 +1,4 @@
 import React from "react"
-import photos from "../../static/photos.json"
 import Photo from "./photo"
 import { useStaticQuery, graphql } from "gatsby"
 
