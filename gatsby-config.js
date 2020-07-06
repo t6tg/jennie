@@ -1,3 +1,4 @@
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: "Jennie",
@@ -42,6 +43,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/Photos/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-drive`,
+      options: {
+        folderId: process.env.GOOGLE_DRIVE_FOLDER_ID,
+        key: process.env.GOOGLE_KEY,
+        serviceAccountEmail: process.env.GOOGLE_SA_EMAIL,
       },
     },
   ],
