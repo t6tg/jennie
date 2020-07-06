@@ -9,7 +9,7 @@ interface Props {
 const Photo = (props: Props) => {
   return (
     <>
-      <Img fluid={props.image} alt={props.alt} />
+      <Img className="rounded-lg" fluid={props.image} alt={props.alt} />
     </>
   )
 }
